@@ -1,36 +1,33 @@
 ﻿GameState gameState = new GameState();
 
-card newCard = new card { name = "Flesh Duplicate", isCopier = true, isLegendary = false };
+card newCard = new card { name = "Flesh Duplicate", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Phantasmal Image", isCopier = true, isLegendary = false };
+newCard = new card { name = "Phantasmal Image", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Clone", isCopier = true, isLegendary = false };
+newCard = new card { name = "Clone", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Copycrook", isCopier = true, isLegendary = false };
+newCard = new card { name = "Copycrook", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Evil Twin", isCopier = true, isLegendary = false };
+newCard = new card { name = "Evil Twin", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Gigantoplasm", isCopier = true, isLegendary = false };
+newCard = new card { name = "Gigantoplasm", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Malleable Impostor", isCopier = true, isLegendary = false };
+newCard = new card { name = "Malleable Impostor", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Mirrorhall Mimic // Ghastly Mimicry", isCopier = true, isLegendary = false };
+newCard = new card { name = "Mirrorhall Mimic // Ghastly Mimicry", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Mocking Doppelganger", isCopier = true, isLegendary = false };
+newCard = new card { name = "Clever Impersonator", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Phantom Steed", isCopier = true, isLegendary = false };
-gameState.AddCardToDeck(newCard);
-
-newCard = new card { name = "Phyrexian Metamorph", isCopier = true, isLegendary = false };
+newCard = new card { name = "Phyrexian Metamorph", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
 newCard = new card { name = "Sakashima of a Thousand Faces", isCopier = true, isLegendary = false };
@@ -45,22 +42,22 @@ gameState.AddCardToDeck(newCard);
 newCard = new card { name = "Spark Double", isCopier = true, isLegendary = false };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Stunt Double", isCopier = true, isLegendary = false };
+newCard = new card { name = "Stunt Double", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Undercover Operative", isCopier = true, isLegendary = false };
+newCard = new card { name = "Undercover Operative", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Visage Bandit", isCopier = true, isLegendary = false };
+newCard = new card { name = "Visage Bandit", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Vizier of Many Faces", isCopier = true, isLegendary = false };
+newCard = new card { name = "Vizier of Many Faces", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Wall of Stolen Identity", isCopier = true, isLegendary = false };
+newCard = new card { name = "Wall of Stolen Identity", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
-newCard = new card { name = "Auton Soldier", isCopier = true, isLegendary = false };
+newCard = new card { name = "Auton Soldier", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
 
 newCard = new card { name = "Callidus Assassin", isCopier = true, isLegendary = false };
@@ -73,7 +70,7 @@ for (int i = 0; i < 38; i++)
 }
 newCard = new card { name = "Generic Card", isCopier = false, isLegendary = false };
 
-for (int i = 0; i <38; i++)
+for (int i = 0; i <39; i++)
 {
     gameState.AddCardToDeck(newCard);
 }
