@@ -50,8 +50,6 @@ newCard = new card { name = "Naga Fleshcrafter", isCopier = true, isLegendary = 
 gameState.AddCardToDeck(newCard);
 newCard = new card { name = "Waxen Shapethief", isCopier = true, isLegendary = true };
 gameState.AddCardToDeck(newCard);
-newCard = new card { name = "Copycrook", isCopier = true, isLegendary = true };
-gameState.AddCardToDeck(newCard);
 
 
 
@@ -74,7 +72,7 @@ for (int i = 0; i < 38; i++)
 }
 
 newCard = new card { name = "Generic Card", isCopier = false, isLegendary = false };
-for (int i = 0; i <31; i++)
+for (int i = 0; i <32; i++)
 {
     gameState.AddCardToDeck(newCard);
 }
@@ -161,6 +159,10 @@ public class GameState
             Console.WriteLine("Gyruda chain has ended.");
             int cardsMilled = 99 - Deck.Count;
             Console.WriteLine("Cards milled: " + cardsMilled +".");
+        }
+        if (Deck.Count == 0)
+        {
+            Console.WriteLine("You've milled everyone! You win!");
         }
     }
 }
