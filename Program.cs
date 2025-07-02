@@ -44,6 +44,19 @@ newCard = new card { name = "Callidus Assassin", isCopier = true, isLegendary = 
 gameState.AddCardToDeck(newCard);
 newCard = new card { name = "Sakashima's Protege", isCopier = true, isLegendary = false };
 gameState.AddCardToDeck(newCard);
+newCard = new card { name = "Deceptive Frostkite", isCopier = true, isLegendary = true };
+gameState.AddCardToDeck(newCard);
+newCard = new card { name = "Naga Fleshcrafter", isCopier = true, isLegendary = true };
+gameState.AddCardToDeck(newCard);
+newCard = new card { name = "Waxen Shapethief", isCopier = true, isLegendary = true };
+gameState.AddCardToDeck(newCard);
+newCard = new card { name = "Copycrook", isCopier = true, isLegendary = true };
+gameState.AddCardToDeck(newCard);
+
+
+
+
+
 
 newCard = new card { name = "Dread Return", isCopier = false, isLegendary = false, isOtherwiseRelevant = true };
 gameState.AddCardToDeck(newCard);
@@ -61,7 +74,7 @@ for (int i = 0; i < 38; i++)
 }
 
 newCard = new card { name = "Generic Card", isCopier = false, isLegendary = false };
-for (int i = 0; i <35; i++)
+for (int i = 0; i <31; i++)
 {
     gameState.AddCardToDeck(newCard);
 }
