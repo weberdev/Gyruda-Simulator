@@ -14,7 +14,7 @@ class GameState {
         this.turn = 0;
         this.deck = [];
     }
-}
+
 
 function addCardToDeck(card){
     this.deck.push(card)
@@ -30,4 +30,27 @@ function drawCard() {
     const card = this.deck.pop();
     console.log(card.name);
     if (card.name === "land") this.mana++;
+}
+
+gyrudaETB(){
+    if (this.deck.length < 4) {
+        console.log("Gyruda chain has ended, you've milled yourself, presumably everyone else as well");
+        return;
+    }
+    const topFour = this.deck.splice(-4);
+    let hasCopier = false;
+    topFour.forEach(card => {
+        console.log(card.name);
+        if (card.isCopier) hasCopier = true;
+    });
+    if (hasCopier) {
+        console.log("");
+        this.gyrudaETB();
+
+    } else {
+        console.log("Gyruda chain has ended.");
+        const cardsMilled = 99 - this.deck.length;
+        console.log("Cards milled: "+ cardsMilled +".")
+    }
+}
 }
