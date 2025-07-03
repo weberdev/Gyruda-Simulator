@@ -8,4 +8,14 @@ class Card {
     }
 }
 
-type Deck = CardType[]
+class GameState {
+    constructor() {
+        this.mana = 0;
+        this.turn = 0;
+        this.deck = [];
+    }
+}
+
+addCardToDeck(card){
+    this.deck.push(card)
+}
