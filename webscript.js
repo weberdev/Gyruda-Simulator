@@ -1,3 +1,3 @@
 // JavaScript source code
-export type CardType = "LegendaryClone" | "NonLegendaryClone" | "Land" | "Chaff"
-export type Deck = CardType[]
+type CardType = "LegendaryClone" | "NonLegendaryClone" | "Land" | "Chaff"
+type Deck = CardType[]
