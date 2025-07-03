@@ -1,12 +1,11 @@
 // JavaScript source code
-type CardType = "LegendaryClone" | "NonLegendaryClone" | "Land" | "Chaff"
-type Deck = CardType[]
-
-function generateDeck(): Deck {
-    for (let i = 0; i < 14; i++) {
-        deck.push("LegendaryClone");
-    }
-    for (let i = 0; i < 16; i++) {
-        deck.push("NonLegendaryClone");
+class Card {
+    constructor(name, isCopier = false, isLegendary = false, isRelevant = false) {
+        this.name = name;
+        this.isCopier = isCopier;
+        this.isLegendary = isLegendary;
+        this.isRelevant = isRelevant;
     }
 }
+
+type Deck = CardType[]
