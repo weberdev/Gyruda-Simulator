@@ -16,12 +16,18 @@ class GameState {
     }
 }
 
-addCardToDeck(card){
+function addCardToDeck(card){
     this.deck.push(card)
 }
-shuffleDeck(){
+function shuffleDeck(){
     for (let i = this.deck.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [this.deck[i], this.deck[j]] = [this.deck[j], this.deck[i]]
     }
+}
+
+function drawCard() {
+    const card = this.deck.pop();
+    console.log(card.name);
+    if (card.name === "land") this.mana++;
 }
