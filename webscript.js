@@ -53,3 +53,13 @@ class GameState {
         }
     }
 }
+
+const gameState = new GameState();
+
+// Clones
+const cloneNames = [
+    "Flesh Duplicate", "Phantasmal Image", "Clone", "Copycrook",
+    "Evil Twin", "Gigantoplasm", "Malleable Impostor", "Mirrorhall Mimic",
+    "Clever Impersonator", "Phyrexian Metamorph", "Sakashima's Student",
+    "Spark Double", "Stunt Double", "Undercover Operative"
+];
