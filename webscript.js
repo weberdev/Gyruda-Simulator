@@ -63,3 +63,15 @@ const cloneNames = [
     "Clever Impersonator", "Phyrexian Metamorph", "Sakashima's Student",
     "Spark Double", "Stunt Double", "Undercover Operative"
 ];
+
+cloneNames.forEach(name => {
+    gameState.addCardToDeck(new Card(name, true, false));
+});
+
+for (let i = 0; i < 38; i++) {
+    gameState.addCardToDeck(new Card("Filler"));
+}
+
+for (let i = 0; i < (99 - cloneNames.length - 38); i++) {
+    gameState.addCardToDeck(new Card("Land"));
+}
