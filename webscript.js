@@ -77,7 +77,7 @@ for (let i = 0; i < (99 - cloneNames.length - 38); i++) {
 }
 
 for (let i = 0; i < 15; i++) {
-    if (gameState.mana > 5 and gameState.turn > 5) {
+    if (gameState.mana > 5 && gameState.turn > 5) {
         console.log("Gyruda chain begins.");
         gameState.gyrudaETB();
         break;
