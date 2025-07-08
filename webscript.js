@@ -69,11 +69,11 @@ cloneNames.forEach(name => {
 });
 
 for (let i = 0; i < 38; i++) {
-    gameState.addCardToDeck(new Card("Filler"));
+    gameState.addCardToDeck(new Card("Land"));
 }
 
 for (let i = 0; i < (99 - cloneNames.length - 38); i++) {
-    gameState.addCardToDeck(new Card("Land"));
+    gameState.addCardToDeck(new Card("Filler"));
 }
 
 for (let i = 0; i < 15; i++) {
