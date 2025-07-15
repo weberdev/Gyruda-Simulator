@@ -55,7 +55,7 @@ class GameState {
 }
 
 const gameState = new GameState();
-
+//I'm not sure if I should implement a case for a plotted visage bandit'
 // Clones
 const cloneNames = [
     "Flesh Duplicate", "Phantasmal Image", "Clone", "Copycrook",
@@ -73,7 +73,7 @@ for (let i = 0; i < 38; i++) {
 }
 
 for (let i = 0; i < (99 - cloneNames.length - 38); i++) {
-    gameState.addCardToDeck(new Card("Filler"));
+    gameState.addCardToDeck(new Card("Filler    "));
 }
 
 for (let i = 0; i < 15; i++) {
